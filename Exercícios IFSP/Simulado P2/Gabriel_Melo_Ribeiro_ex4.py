@@ -3,7 +3,6 @@ def tiraUltima(string, letra):
         return 'String vazia!'
     elif len(string) == 1:
         if string[0] == letra:
-            string += '+'
             return ''
         else:
             return string

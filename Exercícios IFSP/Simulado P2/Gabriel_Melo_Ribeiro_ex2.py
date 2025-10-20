@@ -16,7 +16,10 @@ def pintaFita(lista):
                 else:
                     if distancia < menor:
                         menor = distancia
-            nova.append(menor)
+            if menor <= 9:
+                nova.append(menor)
+            else:
+                nova.append(9)
         else:
             nova.append(0)
     return nova
